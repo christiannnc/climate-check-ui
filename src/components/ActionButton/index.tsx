@@ -2,13 +2,13 @@ import { FC, ReactNode, useMemo } from 'react';
 import styles from './index.module.css';
 
 interface ActionButtonProps {
-  onPress: () => void;
+  onClick: () => void;
   variant?: 'primary' | 'secondary';
   children?: ReactNode;
 }
 
 const ActionButton: FC<ActionButtonProps> = ({
-  onPress,
+  onClick,
   variant = 'primary',
   children,
 }) => {
@@ -26,7 +26,7 @@ const ActionButton: FC<ActionButtonProps> = ({
     return className;
   }, [variant]);
   return (
-    <div onClick={onPress} className={containerClassName}>
+    <div onClick={onClick} className={containerClassName}>
       <span>{children}</span>
     </div>
   );

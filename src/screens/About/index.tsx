@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import styles from './index.module.css';
+import { CLIMATE_CHECK_REPO_URL } from '../../constants';
 
 const AboutPage: FC = () => {
   return (
@@ -28,7 +29,11 @@ const AboutPage: FC = () => {
       <div>
         <span className={styles.textContent}>
           btw, if you're interested, the source code is available{' '}
-          <a className={styles.sourceCodeLink}>
+          <a
+            className={styles.sourceCodeLink}
+            href={CLIMATE_CHECK_REPO_URL}
+            target="_blank"
+          >
             <i>here</i>
           </a>
         </span>

@@ -14,6 +14,7 @@ import poweredByGiphyAttribution from '../../assets/powered_by_giphy_attribution
 
 const HomePage: FC = () => {
   const [selectedItem, setSelectedItem] = useState<DataItem | null>(null);
+  const [attemptedAnswerCount, setAttemptedAnswerCount] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<ContentType | null>(
     null
   );
@@ -41,6 +42,11 @@ const HomePage: FC = () => {
     randomlySelectNextItem();
   }, [setSelectedAnswer, setSelectedItem]);
 
+  const handleAnswerSelection = useCallback((answer: ContentType) => {
+    setSelectedAnswer(answer);
+    setAttemptedAnswerCount((prev) => (prev += 1));
+  }, []);
+
   useEffect(() => {
     randomlySelectNextItem();
   }, []);
@@ -60,7 +66,7 @@ const HomePage: FC = () => {
       setGif(giphyResponse);
     };
     fetchGifFromGiphy();
-  }, [answerIsCorrect]);
+  }, [answerIsCorrect, attemptedAnswerCount]);
 
   return (
     <div className={styles.container}>
@@ -69,11 +75,13 @@ const HomePage: FC = () => {
           <h2 className={styles.heading}>Fact or myth?</h2>
           <Card item={selectedItem} onNext={randomlySelectNextItem} />
           <ButtonGroup>
-            <ActionButton onPress={() => setSelectedAnswer(ContentType.FACT)}>
+            <ActionButton
+              onClick={() => handleAnswerSelection(ContentType.FACT)}
+            >
               {capitalizeFirstLetters(ContentType.FACT)}
             </ActionButton>
             <ActionButton
-              onPress={() => setSelectedAnswer(ContentType.MYTH)}
+              onClick={() => handleAnswerSelection(ContentType.MYTH)}
               variant="secondary"
             >
               {capitalizeFirstLetters(ContentType.MYTH)}
@@ -98,9 +106,9 @@ const HomePage: FC = () => {
             </>
           )}
           <ButtonGroup>
-            <ActionButton onPress={handlePlayAgain}>Play again</ActionButton>
+            <ActionButton onClick={handlePlayAgain}>Play again</ActionButton>
             <ActionButton
-              onPress={() => window.open(selectedItem?.source)}
+              onClick={() => window.open(selectedItem?.source)}
               variant="secondary"
             >
               Source

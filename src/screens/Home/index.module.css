@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.answerResultContainer {
+  width: 60vw;
+  padding: 16px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.answerResultText {
+  color: var(--seasalt);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.heading {
+  font-size: 32px;
+  color: var(--seasalt);
+}
+
+.giphyAttribution {
+  width: 80px;
+}

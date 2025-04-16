@@ -1,0 +1,13 @@
+.link {
+  color: var(--charcoal);
+  text-decoration: none;
+  font-weight: 500;
+  background-color: var(--seasalt);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.link:hover {
+  color: rgba(43, 45, 66, 0.75);
+  font-weight: 500;
+}

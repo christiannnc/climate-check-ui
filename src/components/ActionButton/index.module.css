@@ -1,0 +1,21 @@
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  font-weight: 800;
+  border-radius: 8px;
+}
+
+.fact {
+  color: var(--seasalt);
+  background-color: var(--spring-green);
+}
+
+.myth {
+  background-color: var(--sand);
+}
+
+.buttonContainer:hover {
+  cursor: pointer;
+}

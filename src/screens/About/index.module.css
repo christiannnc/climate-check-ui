@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  height: 100%;
+  padding: 0px 16px;
+  text-align: center;
+  animation: slideFadeIn 1.2s ease-out forwards;
+}
+
+.sourceCodeLink {
+  color: var(--charcoal);
+}
+
+.sourceCodeLink:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    color: var(--sage);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    color: var(--seasalt);
+  }
+}
+
+@media (max-width: 560px) {
+  .heading {
+    font-size: 36px;
+  }
+  .textContent {
+    font-size: 14px;
+  }
+}

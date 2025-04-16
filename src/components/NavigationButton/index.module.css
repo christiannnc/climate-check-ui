@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.navigationIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.label {
+  font-size: 16px;
+}

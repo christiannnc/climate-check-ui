@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "type": "fact",
+      "content": "The combined land and ocean temperature has increased at an average rate of 0.11° Fahrenheit (0.06° Celsius) per decade since 1850",
+      "source": "https://www.climate.gov/news-features/understanding-climate/climate-change-global-temperature#:~:text=According%20to%20NOAA's%202023%20Annual,0.20%C2%B0%20C)%20per%20decade.",
+      "uuid": "6f0ae46a-b24f-4eae-ab46-fad8ca874ed0"
+    },
+    {
+      "type": "fact",
+      "content": "Climate change is caused by human activity",
+      "source": "https://www.un.org/en/climatechange/science/mythbusters"
+    },
+    {
+      "type": "fact",
+      "content": "The climate is changing faster than humans, plants and animals can adapt",
+      "source": "https://www.un.org/en/climatechange/science/mythbusters"
+    },
+    {
+      "type": "fact",
+      "content": "Natural gas is a fossil fuel, not a clean source of energy",
+      "source": "https://www.un.org/en/climatechange/science/mythbusters"
+    },
+    {
+      "type": "fact",
+      "content": "Entire countries already rely on nearly 100 per cent renewable electricity",
+      "source": "https://www.un.org/en/climatechange/science/mythbusters"
+    },
+    {
+      "type": "myth",
+      "content": "Climate change is a natural process. It has nothing to do with people.",
+      "source": "https://www.unep.org/news-and-stories/story/debunking-eight-common-myths-about-climate-change",
+      "uuid": "4303bd17-c906-411a-ae5d-329f7b8e6f1f"
+    },
+    {
+      "type": "myth",
+      "content": "Heatwaves and wildfires have nothing to do with climate change",
+      "source": "https://www.wwf.org.uk/updates/here-are-10-myths-about-climate-change"
+    },
+    {
+      "type": "myth",
+      "content": "China is mostly responsible for climate change",
+      "source": "https://www.wwf.org.uk/updates/here-are-10-myths-about-climate-change"
+    },
+    {
+      "type": "myth",
+      "content": "Renewable energy is more expensive",
+      "source": "https://www.wwf.org.uk/updates/here-are-10-myths-about-climate-change"
+    },
+    {
+      "type": "myth",
+      "content": "Renewable energy can only work when it's not cloudy or windy",
+      "source": "https://www.wwf.org.uk/updates/here-are-10-myths-about-climate-change"
+    },
+    {
+      "type": "myth",
+      "content": "Plants need carbon dioxide (CO2) to survive, so increased CO2 levels are okay.",
+      "source": "https://azhealthtxt.arizona.edu/news/changing-climate-myths-vs-facts"
+    }
+  ]
+}

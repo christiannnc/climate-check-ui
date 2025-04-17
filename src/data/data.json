@@ -27,6 +27,16 @@
       "source": "https://www.un.org/en/climatechange/science/mythbusters"
     },
     {
+      "type": "fact",
+      "content": "The ocean absorbs most of the heat we produce",
+      "source": "https://earth.org/data_visualization/11-interesting-facts-about-climate-change/"
+    },
+    {
+      "type": "fact",
+      "content": "We are losing 1.2 trillion tons of ice each year",
+      "source": "https://earth.org/data_visualization/11-interesting-facts-about-climate-change/"
+    },
+    {
       "type": "myth",
       "content": "Climate change is a natural process. It has nothing to do with people.",
       "source": "https://www.unep.org/news-and-stories/story/debunking-eight-common-myths-about-climate-change",
@@ -56,6 +66,11 @@
       "type": "myth",
       "content": "Plants need carbon dioxide (CO2) to survive, so increased CO2 levels are okay.",
       "source": "https://azhealthtxt.arizona.edu/news/changing-climate-myths-vs-facts"
+    },
+    {
+      "type": "myth",
+      "content": "An increase in cold weather shows that climate change is not real",
+      "source": "https://www.unep.org/news-and-stories/story/debunking-eight-common-myths-about-climate-change"
     }
   ]
 }
